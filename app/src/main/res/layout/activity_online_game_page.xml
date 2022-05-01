@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".Online_Game_Page">
+
+    <TextView
+        android:id="@+id/tv_wait_for_rival_choice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Wait For Rival Choice"
+        android:textSize="40sp" />
+
+    <LinearLayout
+        android:id="@+id/rock_paper_scissors_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/ibtn_rock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00FFFFFF"
+            app:srcCompat="@drawable/rock" />
+
+        <ImageButton
+            android:id="@+id/ibtn_paper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00FFFFFF"
+            app:srcCompat="@drawable/paper" />
+
+        <ImageButton
+            android:id="@+id/ibtn_scissors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00FFFFFF"
+            app:srcCompat="@drawable/scissors" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_victories_table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="TextView"
+        android:textSize="40sp" />
+
+</LinearLayout>

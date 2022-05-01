@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gamebackground"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_aboutTheGame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#66000000"
+        android:text="About The Game"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#66000000"
+        android:text="The app I made is a stone, paper and scissors game. In my game you can play in two modes, solo mode - this mode does not require internet connection, and online mode - in this mode you play together with friends using a connection with room code and after connecting just play and have fun. My game also has a table of points to increase the competitiveness between online players, it is also possible to share your score with friends."
+        android:textColor="#FFFFFF"
+        android:textSize="30sp" />
+</LinearLayout>

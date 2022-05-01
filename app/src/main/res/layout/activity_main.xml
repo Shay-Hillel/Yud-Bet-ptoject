@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gamebackground"
+    tools:context=".MainActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/back_to_start_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00FFFFFF"
+            app:srcCompat="@android:drawable/ic_menu_revert"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/back_to_start_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Back To Start"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/user_name_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="User Name: "
+        android:textStyle="bold"
+        android:textColor="#9C27B0"
+        android:textColorHint="#F2FF5722"
+        android:textSize="30sp"
+        tools:visibility="gone" />
+
+    <EditText
+        android:id="@+id/password_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Password: "
+        android:textStyle="bold"
+        android:inputType="textPassword"
+        android:textColor="#9C27B0"
+        android:textColorHint="#F2FF5722"
+        android:textSize="30sp"
+        tools:visibility="gone" />
+
+    <EditText
+        android:id="@+id/password_validation_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Password validation: "
+        android:inputType="textPassword"
+        android:textStyle="bold"
+        android:textColor="#9C27B0"
+        android:textColorHint="#F2FF5722"
+        android:textSize="30sp"
+        tools:visibility="gone" />
+
+
+    <EditText
+        android:id="@+id/id_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ID:"
+        android:textStyle="bold"
+        android:inputType="number"
+        android:textColor="#9C27B0"
+        android:textColorHint="#F2FF5722"
+        android:textSize="30sp"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/log_in_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Login"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/or_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="------ OR ------"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp" />
+
+
+    <Button
+        android:id="@+id/sign_up_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#0B32FD"
+        android:gravity="center"
+        android:text="Sign Up"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/forgot_password_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
+        android:text="Forgot Password"
+        android:textStyle="bold"
+        android:textColor="#CDDDBA"
+        android:textSize="30sp"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/continue_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#0B32FD"
+        android:gravity="center"
+        android:text="Continue"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        tools:visibility="gone" />
+
+</LinearLayout>

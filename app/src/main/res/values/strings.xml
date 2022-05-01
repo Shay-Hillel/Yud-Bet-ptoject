@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Shay\'s Game</string>
+    <string name="mute">Mute</string>
+    <string name="share_my_record">Share My Record</string>
+    <string name="about_the_game">About The Game</string>
+    <string name="about_me">About Me</string>
+</resources>

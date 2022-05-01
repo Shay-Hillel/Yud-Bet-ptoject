@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.shaysgame">
+
+    <!--
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+    -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/gameicon"
+        android:label="RPS"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ShaysGame">
+        <service
+            android:name=".backGroundMusic_service"
+            android:enabled="true"
+            android:exported="true"></service>
+
+        <activity
+            android:name=".WinOrLosePage"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Battle_Show_Page"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Wait_P2"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity android:name=".AboutTheGame">
+
+        </activity>
+        <activity android:name=".AboutMe">
+
+        </activity>
+
+        <receiver android:name=".InternetDisconnected">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGDE" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".LowBatteryReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_LOW" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".Online_Game_Page"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".gamePlayPage"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CreateOrJoin"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".soloPage"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PlayPage"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".startPage"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Table_Record_Activity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

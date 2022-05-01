@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gamebackground"
+    tools:context=".WinOrLosePage">
+
+    <TextView
+        android:id="@+id/tv_winOrLose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#6F000000"
+        android:gravity="center"
+        android:text="You Win!😊"
+        android:textColor="#FFFFFF"
+        android:textSize="60sp" />
+
+    <TextView
+        android:id="@+id/tv_point"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#6F000000"
+        android:text="You got 100 points"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btn_returnToOnlinePage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Return to online page" />
+
+    <Button
+        android:id="@+id/btn_returnToStartPage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Return to start page" />
+
+</LinearLayout>
