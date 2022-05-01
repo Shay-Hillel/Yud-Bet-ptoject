@@ -23,7 +23,7 @@ import com.google.firebase.database.ValueEventListener;
 
 public class MainActivity extends ActionBarActivity implements View.OnClickListener {
     static Player nowPlayingInThisPhone;
-
+int x;
     Intent musicIntent;
 
     LowBatteryReceiver lowBatteryReceiver = new LowBatteryReceiver();
